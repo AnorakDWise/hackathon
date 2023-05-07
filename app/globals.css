@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.consoleUnderline {
+    animation: typing 1.5s 1s linear forwards;
+}
+
+.pulsingUnderline {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes typing {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(1395px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 50%;
+    }
+}
