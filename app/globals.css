@@ -12,10 +12,10 @@
 
 @keyframes typing {
     from {
-        transform: translateX(0);
+        transform: translateX(0) translateY(-80px);
     }
     to {
-        transform: translateX(1395px);
+        transform: translateX(1395px) translateY(-80px);
     }
 }
 
