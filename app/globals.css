@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .consoleUnderline {
     animation: typing 1.5s 1s linear forwards;
 }
@@ -10,12 +11,18 @@
     animation: pulse 2s ease-in-out infinite;
 }
 
+@media screen and (max-width: 1290px) {
+    body {
+        zoom: 0.75;
+    }
+}
+
 @keyframes typing {
     from {
-        transform: translateX(0) translateY(-80px);
+        transform: translateX(200px) translateY(-80px);
     }
     to {
-        transform: translateX(1395px) translateY(-80px);
+        transform: translateX(1260px) translateY(-80px);
     }
 }
 
